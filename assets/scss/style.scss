@@ -1,0 +1,460 @@
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+header, main, .head_intro_background, main > section, footer {
+  width: 100%;
+}
+
+@mixin bg_image($url) {
+  background: {
+    image: url($url);
+    repeat: no-repeat;
+    size: cover;
+  }
+}
+
+@mixin section_head($font_color) {
+  font-size: 36px;
+  color: $font_color;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  text-align: center;
+}
+
+@mixin section_description($font_color) {
+  font-size: 16px;
+  line-height: 24px;
+  color: $font_color;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+header {
+  $parent-height: 110px;
+  height: $parent-height;
+
+  .header_inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .links {
+      display: flex;
+
+      nav {
+        width: 700px;
+        margin: 0 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        > a {
+          padding: 0 10px;
+          border-top: 3px solid transparent;
+          line-height: $parent-height - 3px;
+          font-size: 21px;
+          color: #ffffff;
+          font-weight: 700;
+
+          &:hover {
+            border-top-color: #ffffff;
+          }
+        }
+      }
+
+      .social_network_icons {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 21px;
+          height: 21px;
+          object-fit: cover;
+        }
+
+        img[alt="twitter"] {
+          object-position: 0 center;
+        }
+
+        img[alt="youtube"] {
+          object-position: 60% center;
+        }
+
+        img[alt="facebook"] {
+          object-position: 110% center;
+        }
+      }
+    }
+  }
+}
+
+.head_intro_background {
+  height: 750px;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  @include bg_image("../images/intro_backgorund.jpg");
+}
+
+.intro {
+  height: 640px;
+
+  .intro_inner {
+    max-width: 970px;
+    padding: 110px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > * {
+      margin-bottom: 35px;
+    }
+
+    h1 {
+      font-size: 90px;
+      color: #ffffff;
+      font-weight: 400;
+      font-family: "Yeseva One";
+      filter: drop-shadow(0.469px 0.883px 1px rgba(1, 1, 1, 0.64));
+      text-align: center;
+    }
+
+    .buttons {
+      width: 506px;
+      display: flex;
+      justify-content: space-between;
+
+      input:nth-child(1) {
+        width: 228px;
+        height: 57px;
+        background-color: rgba(0, 0, 0, 0.7019607843137254);
+        border: 1px solid #000000;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Lato";
+        text-align: center;
+      }
+
+      input:nth-child(2) {
+        width: 228px;
+        height: 57px;
+        background-color: rgba(255, 255, 255, 0.2784313725490196);
+        border: 1px solid #ffffff;
+        font-size: 18px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Lato";
+        text-align: center;
+      }
+    }
+  }
+}
+
+.right_food {
+  @include bg_image("../images/foot_background.jpg");
+
+  .right_food_inner {
+    width: 1030px;
+    height: 710px;
+    padding: 100px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .right_food_info {
+      width: 430px;
+      height: 510px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h2 {
+        @include section_head(#cc9900);
+      }
+
+      .description {
+      }
+
+      .description {
+        @include section_description(#4c4c4c);
+      }
+    }
+  }
+}
+
+.ingredients {
+  @include bg_image("../images/ingredients_background.jpg");
+
+  .ingredients_inner {
+    padding: 100px 40px;
+
+    .ingredients_description_background {
+      @include bg_image("../images/ingredients_description_background.png");
+      max-width: 570px;
+      height: 557px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: auto;
+
+      .ingredients_info {
+        padding: 80px;
+        text-align: center;
+
+        > * {
+          margin-bottom: 15px;
+        }
+
+        h2 {
+          @include section_head(#ffffff);
+        }
+
+        .description {
+          @include section_description(#ffffff);
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  @include bg_image("../images/menu_background.jpg");
+
+  .menu_inner {
+    padding: 100px 40px;
+
+    .menu_points {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .menu_point {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 36px;
+          line-height: 24px;
+          color: #cc9900;
+          font-weight: 400;
+          font-family: "Yeseva One";
+        }
+
+        img {
+          margin: 15px 0px;
+        }
+
+        .dish {
+          width: 100%;
+          margin-bottom: 30px;
+
+          .dish_name_and_price {
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #c89f2d;
+
+            .dish_name, .dish_price {
+              font-size: 21px;
+              line-height: 24px;
+              color: #c89f2d;
+              font-weight: 400;
+              font-family: "Yeseva One";
+            }
+          }
+
+          .dish_description {
+            font-size: 16px;
+            line-height: 24px;
+            color: #4c4c4c;
+            font-weight: 400;
+            font-family: "Lato";
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  @include bg_image("../images/reviews_backgroud.jpg");
+
+  .reviews_inner {
+    padding: 100px 240px;
+
+    .reviews_description_background {
+      @include bg_image("../images/reviews_description_background.png");
+      width: 770px;
+      height: 557px;
+
+      .reviews_info {
+        padding: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        > * {
+          margin-bottom: 20px;
+        }
+
+        h2 {
+          @include section_head(#ffffff);
+        }
+
+        .description {
+          position: relative;
+          font-size: 25px;
+          line-height: 45px;
+          color: #dde0df;
+          font-weight: 700;
+          font-family: "Gentium Book Basic";
+          text-align: center;
+
+          &:after {
+            position: absolute;
+            left: 40%;
+            top: 110%;
+            content: "  - food inc, New York";
+            @include section_description(#ffffff);
+          }
+        }
+      }
+    }
+  }
+}
+
+.right_food_continue {
+  @include bg_image("../images/foot_continue_background.jpg");
+
+  .right_food_continue_inner {
+    padding: 100px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .image_content {
+      width: 570px;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 270px;
+      }
+    }
+
+    .book_info {
+      width: 570px;
+      padding: 0 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      h2 {
+        @include section_head(#cc9900);
+      }
+
+      .description {
+        @include section_description(#4c4c4c)
+      }
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .input_group {
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-size: 14px;
+            color: #c9a131;
+            font-weight: 700;
+            font-family: "Open Sans";
+          }
+
+          input {
+            width: 200px;
+            height: 36px;
+            padding: 0 10px;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border: 1px solid #c89f2d;
+            font-size: 16px;
+            color: #7c7c7c;
+            font-weight: 400;
+            font-style: italic;
+            font-family: "Open Sans";
+          }
+        }
+
+        button {
+          width: 200px;
+          height: 36px;
+          background-color: rgba(200, 159, 45, 0.9803921568627451);
+          border: 1px solid #c89f2d;
+          font-size: 16px;
+          color: #ffffff;
+          font-weight: 400;
+          font-family: "Open Sans";
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #191919;
+
+  .footer_inner {
+    padding: 52px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    .footer_info {
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-size: 21px;
+        line-height: 24px;
+        color: #fefefe;
+        font-weight: 400;
+        font-family: "Yeseva One";
+      }
+
+      img[alt="Divider"]{
+        margin: 10px 0;
+      }
+
+      p, .bold {
+        font-size: 16px;
+        line-height: 24px;
+        color: #ffffff;
+        font-family: "Lato";
+        white-space: pre-line;
+        text-align: center;
+        .bold{
+          font-family: "Open Sans";
+        }
+      }
+    }
+  }
+}

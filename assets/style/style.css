@@ -1,0 +1,427 @@
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+header, main, .head_intro_background, main > section, footer {
+  width: 100%;
+}
+
+header {
+  height: 110px;
+}
+header .header_inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_inner .links {
+  display: flex;
+}
+header .header_inner .links nav {
+  width: 700px;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header_inner .links nav > a {
+  padding: 0 10px;
+  border-top: 3px solid transparent;
+  line-height: 107px;
+  font-size: 21px;
+  color: #ffffff;
+  font-weight: 700;
+}
+header .header_inner .links nav > a:hover {
+  border-top-color: #ffffff;
+}
+header .header_inner .links .social_network_icons {
+  display: flex;
+  align-items: center;
+}
+header .header_inner .links .social_network_icons img {
+  width: 21px;
+  height: 21px;
+  object-fit: cover;
+}
+header .header_inner .links .social_network_icons img[alt=twitter] {
+  object-position: 0 center;
+}
+header .header_inner .links .social_network_icons img[alt=youtube] {
+  object-position: 60% center;
+}
+header .header_inner .links .social_network_icons img[alt=facebook] {
+  object-position: 110% center;
+}
+
+.head_intro_background {
+  height: 750px;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+  background-image: url("../images/intro_backgorund.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro {
+  height: 640px;
+}
+.intro .intro_inner {
+  max-width: 970px;
+  padding: 110px 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro .intro_inner > * {
+  margin-bottom: 35px;
+}
+.intro .intro_inner h1 {
+  font-size: 90px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  filter: drop-shadow(0.469px 0.883px 1px rgba(1, 1, 1, 0.64));
+  text-align: center;
+}
+.intro .intro_inner .buttons {
+  width: 506px;
+  display: flex;
+  justify-content: space-between;
+}
+.intro .intro_inner .buttons input:nth-child(1) {
+  width: 228px;
+  height: 57px;
+  background-color: rgba(0, 0, 0, 0.7019607843);
+  border: 1px solid #000000;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+.intro .intro_inner .buttons input:nth-child(2) {
+  width: 228px;
+  height: 57px;
+  background-color: rgba(255, 255, 255, 0.2784313725);
+  border: 1px solid #ffffff;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.right_food {
+  background-image: url("../images/foot_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right_food .right_food_inner {
+  width: 1030px;
+  height: 710px;
+  padding: 100px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.right_food .right_food_inner .right_food_info {
+  width: 430px;
+  height: 510px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.right_food .right_food_inner .right_food_info h2 {
+  font-size: 36px;
+  color: #cc9900;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  text-align: center;
+}
+.right_food .right_food_inner .right_food_info .description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.ingredients {
+  background-image: url("../images/ingredients_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ingredients .ingredients_inner {
+  padding: 100px 40px;
+}
+.ingredients .ingredients_inner .ingredients_description_background {
+  background-image: url("../images/ingredients_description_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 570px;
+  height: 557px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+}
+.ingredients .ingredients_inner .ingredients_description_background .ingredients_info {
+  padding: 80px;
+  text-align: center;
+}
+.ingredients .ingredients_inner .ingredients_description_background .ingredients_info > * {
+  margin-bottom: 15px;
+}
+.ingredients .ingredients_inner .ingredients_description_background .ingredients_info h2 {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  text-align: center;
+}
+.ingredients .ingredients_inner .ingredients_description_background .ingredients_info .description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.menu {
+  background-image: url("../images/menu_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menu .menu_inner {
+  padding: 100px 40px;
+}
+.menu .menu_inner .menu_points {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.menu .menu_inner .menu_points .menu_point {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu .menu_inner .menu_points .menu_point h2 {
+  font-size: 36px;
+  line-height: 24px;
+  color: #cc9900;
+  font-weight: 400;
+  font-family: "Yeseva One";
+}
+.menu .menu_inner .menu_points .menu_point img {
+  margin: 15px 0px;
+}
+.menu .menu_inner .menu_points .menu_point .dish {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.menu .menu_inner .menu_points .menu_point .dish .dish_name_and_price {
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #c89f2d;
+}
+.menu .menu_inner .menu_points .menu_point .dish .dish_name_and_price .dish_name, .menu .menu_inner .menu_points .menu_point .dish .dish_name_and_price .dish_price {
+  font-size: 21px;
+  line-height: 24px;
+  color: #c89f2d;
+  font-weight: 400;
+  font-family: "Yeseva One";
+}
+.menu .menu_inner .menu_points .menu_point .dish .dish_description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: left;
+}
+
+.reviews {
+  background-image: url("../images/reviews_backgroud.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.reviews .reviews_inner {
+  padding: 100px 240px;
+}
+.reviews .reviews_inner .reviews_description_background {
+  background-image: url("../images/reviews_description_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 770px;
+  height: 557px;
+}
+.reviews .reviews_inner .reviews_description_background .reviews_info {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.reviews .reviews_inner .reviews_description_background .reviews_info > * {
+  margin-bottom: 20px;
+}
+.reviews .reviews_inner .reviews_description_background .reviews_info h2 {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  text-align: center;
+}
+.reviews .reviews_inner .reviews_description_background .reviews_info .description {
+  position: relative;
+  font-size: 25px;
+  line-height: 45px;
+  color: #dde0df;
+  font-weight: 700;
+  font-family: "Gentium Book Basic";
+  text-align: center;
+}
+.reviews .reviews_inner .reviews_description_background .reviews_info .description:after {
+  position: absolute;
+  left: 40%;
+  top: 110%;
+  content: "  - food inc, New York";
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+
+.right_food_continue {
+  background-image: url("../images/foot_continue_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.right_food_continue .right_food_continue_inner {
+  padding: 100px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.right_food_continue .right_food_continue_inner .image_content {
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+.right_food_continue .right_food_continue_inner .image_content img {
+  width: 270px;
+}
+.right_food_continue .right_food_continue_inner .book_info {
+  width: 570px;
+  padding: 0 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.right_food_continue .right_food_continue_inner .book_info h2 {
+  font-size: 36px;
+  color: #cc9900;
+  font-weight: 400;
+  font-family: "Yeseva One";
+  text-align: center;
+}
+.right_food_continue .right_food_continue_inner .book_info .description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #4c4c4c;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+}
+.right_food_continue .right_food_continue_inner .book_info form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.right_food_continue .right_food_continue_inner .book_info form .input_group {
+  display: flex;
+  flex-direction: column;
+}
+.right_food_continue .right_food_continue_inner .book_info form .input_group label {
+  font-size: 14px;
+  color: #c9a131;
+  font-weight: 700;
+  font-family: "Open Sans";
+}
+.right_food_continue .right_food_continue_inner .book_info form .input_group input {
+  width: 200px;
+  height: 36px;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #c89f2d;
+  font-size: 16px;
+  color: #7c7c7c;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Open Sans";
+}
+.right_food_continue .right_food_continue_inner .book_info form button {
+  width: 200px;
+  height: 36px;
+  background-color: rgba(200, 159, 45, 0.9803921569);
+  border: 1px solid #c89f2d;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+footer {
+  background-color: #191919;
+}
+footer .footer_inner {
+  padding: 52px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer_inner .footer_info {
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer_inner .footer_info h3 {
+  font-size: 21px;
+  line-height: 24px;
+  color: #fefefe;
+  font-weight: 400;
+  font-family: "Yeseva One";
+}
+footer .footer_inner .footer_info img[alt=Divider] {
+  margin: 10px 0;
+}
+footer .footer_inner .footer_info p, footer .footer_inner .footer_info .bold {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Lato";
+  white-space: pre-line;
+  text-align: center;
+}
+footer .footer_inner .footer_info p .bold, footer .footer_inner .footer_info .bold .bold {
+  font-family: "Open Sans";
+}
+
+/*# sourceMappingURL=style.css.map */
