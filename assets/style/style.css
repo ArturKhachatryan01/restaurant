@@ -3,6 +3,7 @@
   height: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 header, main, .head_intro_background, main > section, footer {
@@ -46,6 +47,7 @@ header .header_inner .links .social_network_icons {
 header .header_inner .links .social_network_icons img {
   width: 21px;
   height: 21px;
+  margin: 0 5px;
   object-fit: cover;
 }
 header .header_inner .links .social_network_icons img[alt=twitter] {
@@ -258,7 +260,7 @@ header .header_inner .links .social_network_icons img[alt=facebook] {
   background-size: cover;
 }
 .reviews .reviews_inner {
-  padding: 100px 240px;
+  padding: 100px 0;
 }
 .reviews .reviews_inner .reviews_description_background {
   background-image: url("../images/reviews_description_background.png");
@@ -266,6 +268,7 @@ header .header_inner .links .social_network_icons img[alt=facebook] {
   background-size: cover;
   width: 770px;
   height: 557px;
+  margin: auto;
 }
 .reviews .reviews_inner .reviews_description_background .reviews_info {
   padding: 70px;
@@ -364,7 +367,7 @@ header .header_inner .links .social_network_icons img[alt=facebook] {
   font-family: "Open Sans";
 }
 .right_food_continue .right_food_continue_inner .book_info form .input_group input {
-  width: 200px;
+  width: 180px;
   height: 36px;
   padding: 0 10px;
   margin-bottom: 20px;

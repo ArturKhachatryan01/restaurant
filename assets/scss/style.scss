@@ -3,6 +3,7 @@
   height: 100%;
   max-width: 1250px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 header, main, .head_intro_background, main > section, footer {
@@ -75,6 +76,7 @@ header {
         img {
           width: 21px;
           height: 21px;
+          margin: 0 5px;
           object-fit: cover;
         }
 
@@ -292,12 +294,13 @@ header {
   @include bg_image("../images/reviews_backgroud.jpg");
 
   .reviews_inner {
-    padding: 100px 240px;
+    padding: 100px 0;
 
     .reviews_description_background {
       @include bg_image("../images/reviews_description_background.png");
       width: 770px;
       height: 557px;
+      margin: auto;
 
       .reviews_info {
         padding: 70px;
@@ -388,7 +391,7 @@ header {
           }
 
           input {
-            width: 200px;
+            width: 180px;
             height: 36px;
             padding: 0 10px;
             margin-bottom: 20px;
